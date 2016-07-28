@@ -11,6 +11,14 @@ git clone git://git.sv.gnu.org/recutils.git
 
 The GNU Recutils package includes a command-line interface, an emacs rec-mode for creating and editing recfiles and ob-rec.el by which those recfiles are read into a table in org-mode.
 
+INSTALLATION VERSE PLACEMENT AND ORG-BABEL-LOAD LANGUAGE
+
+In your init.el file the installation verse (see rec-mode info) should be placed before org-babel-do-load-languages.
+
+Within org-babel-load languages evaluation of rec code blocks is enabled with
+
+      (rec . t)
+
 ob-rec.el DESCRIPTION AND DISCUSSION 
 
 See Jose's and Eric Shulte's thread at Emacs-orgmode https://lists.gnu.org/archive/html/emacs-orgmode/2011-02/msg00814.html
